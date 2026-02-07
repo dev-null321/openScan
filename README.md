@@ -1,4 +1,4 @@
-# OpenClaw Security Scanner
+# OpenScan
 
 A lightweight malware detection library for OpenClaw, targeting macOS and Linux binaries and scripts. Ported from the [Harkonnen](https://github.com/dev-null321/Harkonnen) antimalware engine.
 
@@ -47,8 +47,8 @@ For shell scripts, Python, JavaScript, etc.:
 
 ```bash
 # Clone the repo
-git clone https://github.com/marqbritt/openclaw-security.git
-cd openclaw-security
+git clone https://github.com/marqbritt/openscan.git
+cd openscan
 
 # No dependencies - pure Node.js
 node bin/scan.js --help
@@ -84,7 +84,7 @@ node bin/scan.js /path --no-color
 ### Programmatic API
 
 ```javascript
-const { scanFile, scanDirectory, formatResult } = require('openclaw-security');
+const { scanFile, scanDirectory, formatResult } = require('openscan');
 
 // Scan a single file
 async function checkBinary(path) {
@@ -140,7 +140,7 @@ async function loadSkill(skillPath) {
 **Agent self-check:**
 ```javascript
 // Before recommending a tool to the user
-const { scanFile } = require('openclaw-security');
+const { scanFile } = require('openscan');
 
 async function recommendTool(toolPath) {
   const result = await scanFile(toolPath);

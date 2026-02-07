@@ -1,9 +1,9 @@
 ---
-name: openclaw-security
+name: openscan
 description: Scan binaries and scripts for malicious patterns before trusting them. Use when installing skills, evaluating unknown binaries, or auditing tool dependencies.
 version: 1.0.0
 author: Marq Britt
-homepage: https://github.com/marqbritt/openclaw-security
+homepage: https://github.com/marqbritt/openscan
 metadata:
   openclaw:
     emoji: "🛡️"
@@ -14,7 +14,7 @@ metadata:
       - linux
 ---
 
-# OpenClaw Security Scanner
+# OpenScan
 
 Lightweight malware detection for macOS and Linux binaries/scripts. Ported from the Harkonnen antimalware engine.
 
@@ -78,7 +78,7 @@ Use before installing or trusting unknown binaries:
 
 ```javascript
 // Example: scan before allowing a skill's binary
-const { scanFile } = require('openclaw-security/lib/scanner');
+const { scanFile } = require('openscan/lib/scanner');
 
 async function checkBinary(binPath) {
   const result = await scanFile(binPath);

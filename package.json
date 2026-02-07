@@ -1,10 +1,10 @@
 {
-  "name": "openclaw-security",
+  "name": "openscan",
   "version": "1.0.0",
   "description": "Lightweight malware detection for OpenClaw - scan binaries and scripts for malicious patterns",
   "main": "lib/scanner.js",
   "bin": {
-    "openclaw-scan": "bin/scan.js"
+    "openscan": "bin/scan.js"
   },
   "scripts": {
     "test": "node test/test.js",
@@ -23,7 +23,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/marqbritt/openclaw-security"
+    "url": "https://github.com/dev-null321/openScan"
   },
   "engines": {
     "node": ">=18"
